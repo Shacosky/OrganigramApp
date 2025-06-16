@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Organigrama</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="container py-5">
+  <h1 class="mb-4 text-center text-white">Organigrama de la Empresa</h1>
+  <form id="employeeForm" class="row g-2 justify-content-center">
+    <div class="col-md-4">
+      <input type="text" id="name" class="form-control" placeholder="Nombre" required>
+    </div>
+    <div class="col-md-4">
+      <input type="number" id="managerId" class="form-control" placeholder="ID del Jefe (opcional)">
+    </div>
+    <div class="col-md-2">
+      <button type="submit" class="btn btn-primary w-100">Agregar</button>
+    </div>
+  </form>
+  <div id="chart" class="mt-4"></div>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/d3-flextree@2.1.2/build/d3-flextree.js"></script>
+  <script src="lib/d3-org-chart.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
