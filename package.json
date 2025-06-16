@@ -1,0 +1,17 @@
+{
+  "name": "organigramapp",
+  "version": "1.0.0",
+  "description": "Aplicación Web y Movil para crear los organigramas de empresas.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No tests defined\"",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
