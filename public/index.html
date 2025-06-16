@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Organigrama</title>
+  <style>
+    #chart {
+      width: 100%;
+      height: 500px;
+      border: 1px solid #ccc;
+    }
+    form {
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>Organigrama de la Empresa</h1>
+  <form id="employeeForm">
+    <input type="text" id="name" placeholder="Nombre" required>
+    <input type="number" id="managerId" placeholder="ID del Jefe (opcional)">
+    <button type="submit">Agregar</button>
+  </form>
+  <div id="chart"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+  <script src="script.js"></script>
+</body>
+</html>
